@@ -1,0 +1,28 @@
+.tp-grid-default {
+    width: 100%;
+    max-width: 1024px;
+    @media (max-width: 1088px) {
+        max-width: 674px;
+    }
+    @media (max-width: 736px) {
+        max-width: 320px;
+    }
+}
+
+.tp-grid-wide {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.tp-grid-6-col {
+    width: 100%;
+    max-width: 496px;
+}
+
+.tp-grid-modal {
+    width: 100%;
+    max-width: 674px;
+    @media (max-width: 736px) {
+        max-width: 320px;
+    }
+}

@@ -1,11 +1,13 @@
 {
   "compilerOptions": {
+    "baseUrl": "src",
     "target": "es5",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
+    "strictNullChecks": false,                         /* When type checking, take into account `null` and `undefined`. */
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,

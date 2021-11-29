@@ -62,18 +62,19 @@ function NormalLoginFormPage(props: any) {
         <Grid className="login-form" lg={6}>
           <FormProvider {...reactHookFormProps}>
             <form
-              ref={loginFormRef as any}
-              method="POST"
-              action="/login"
+              ref={loginFormRef as any}              
               onSubmit={async (e) => {
                 e.preventDefault();
                 if (!(await reactHookFormProps.trigger())) {
+                  console.log("Form is not valid");
                   return;
                 }
                 if (!loginFormRef.current) {
                   return;
                 }
-                loginFormRef.current.submit();
+                reactHookFormProps.setError("email", {
+                  message: "invalid",
+                });
               }}
             >
               <div className="mb-2">
@@ -121,7 +122,7 @@ function NormalLoginFormPage(props: any) {
                   </Typography.Text>
                 </a>
                 <div className="d-flex justify-content-end">
-                  <Button disabled={isSubmitting}>Login</Button>
+                  <Button type='submit' disabled={isSubmitting}>Login</Button>
                 </div>
                 {serverJsonState.role === "member" && (
                   <div className="d-flex flex-row justify-content-end align-items-center">

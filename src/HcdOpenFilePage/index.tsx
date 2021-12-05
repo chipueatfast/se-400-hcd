@@ -1,5 +1,5 @@
 import React from "react";
-import { AlertCirleIcon, CheckIcon, DocumentIcon } from "@trueprofile.io/icons";
+import { AlertCirleIcon, CheckIcon, DocumentIcon } from "icons-build";
 import styled from "styled-components";
 import {
   FlexContent,

@@ -7,7 +7,7 @@ import {
   LinkedinIcon,
   GoogleIcon,
   CloseIcon,
-} from "@trueprofile.io/icons";
+} from "icons-build";
 import {
   Button,
   FormLayout,

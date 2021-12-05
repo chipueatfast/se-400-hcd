@@ -1,0 +1,1 @@
+const React=require("react");function BookmarkIcon(e){return React.createElement("svg",Object.assign({xmlns:"http://www.w3.org/2000/svg",viewBox:"0 0 24 24",width:24,height:24,focusable:"false","aria-hidden":"true"},e),React.createElement("path",{fill:"none",stroke:e.color||"#00497A",d:"M17.5 18.5 12 14.375 6.5 18.5V5h11v13.5Z"}))}module.exports=BookmarkIcon;

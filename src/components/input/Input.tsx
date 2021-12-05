@@ -2,7 +2,7 @@ import { forwardRef } from 'react';
 import { Typography } from 'ui-build';
 import * as Sc from './Input.styled';
 import { classNames } from 'helpers/classNames';
-import { AlertCirleIcon } from '@trueprofile.io/icons';
+import { AlertCirleIcon } from 'icons-build';
 import { GREEN_CONFIRM } from 'constants/colors';
 
 export interface InputProps

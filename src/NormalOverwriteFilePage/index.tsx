@@ -1,4 +1,4 @@
-import { Button, OutmostContainer } from "@trueprofile.io/react-ui";
+import { Button, OutmostContainer } from "ui-build";
 import React from "react";
 
 function NormalOverwriteFilePage() {

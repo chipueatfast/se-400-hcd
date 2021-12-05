@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("react/jsx-runtime"),r=require("./Switch.styled.js");exports.SwitchLabel=t=>{let{content:s,checked:i,disabled:c}=t;return"string"!=typeof s?s:e.jsx(r.Label,Object.assign({color:i?"blue":"gray",disabled:c},{children:s}),void 0)};

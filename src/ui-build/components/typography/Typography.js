@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var r=require("./TypographyParagraph.js"),e=require("./TypographyText.js"),p=require("./TypographyTitle.js");const a=r=>r.children;a.Title=p.TypographyTitle,a.Text=e.TypographyText,a.Paragraph=r.TypographyParagraph,exports.Typography=a;

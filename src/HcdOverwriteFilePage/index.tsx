@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Modal, OutmostContainer } from "@trueprofile.io/react-ui";
+import { Button, Modal, OutmostContainer } from "ui-build";
 import { ModalBody, ModalFooter } from "react-bootstrap";
 
 const AnyModal = Modal as any;

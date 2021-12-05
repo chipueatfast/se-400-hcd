@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("../../_virtual/_tslib.js"),r=require("react/jsx-runtime"),t=require("react-select");exports.Input=s=>{const u=e.__rest(s,["autoCorrect"]);return r.jsx(t.components.Input,Object.assign({},u),void 0)};

@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import * as Yup from "yup";
-import { FormLayout, Button } from "@trueprofile.io/react-ui";
+import { FormLayout, Button } from "ui-build";
 
 import { Container, Box } from "./styled";
 import { FormProvider, useForm } from "react-hook-form";

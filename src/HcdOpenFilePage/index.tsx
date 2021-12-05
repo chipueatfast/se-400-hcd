@@ -8,7 +8,7 @@ import {
   toast,
   Toast,
   Typography,
-} from "@trueprofile.io/react-ui";
+} from "ui-build";
 import { BLACK, YELLOW_HIGHLIGHT } from "constants/colors";
 
 export const FileContainer = styled.div`

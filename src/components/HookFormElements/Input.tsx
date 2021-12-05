@@ -1,6 +1,6 @@
 import React from "react";
 import { Controller } from "react-hook-form";
-import { Input } from "@trueprofile.io/react-ui";
+import { Input } from "ui-build";
 
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
     name: string;

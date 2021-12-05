@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("react");exports.useControlled=function(t){let{controlled:r,default:u}=t;const{current:o}=e.useRef(void 0!==r),[l,s]=e.useState(u);return[o?r:l,e.useCallback((e=>{o||s(e)}),[])]};

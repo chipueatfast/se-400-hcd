@@ -16,7 +16,7 @@ import {
   Typography,
   OutmostContainer,
   IconButton,
-} from "@trueprofile.io/react-ui";
+} from "ui-build";
 import { HcdHookFormInput } from "components/HcdHookFormElements";
 import { useLogin } from "hooks/useLogin";
 import {

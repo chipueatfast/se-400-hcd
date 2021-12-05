@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("react/jsx-runtime"),r=require("./ActionBar.styled.js");exports.Primary=i=>e.jsx(r.Primary,{children:i.children},void 0);

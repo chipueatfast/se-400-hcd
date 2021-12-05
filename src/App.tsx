@@ -6,7 +6,7 @@ import HcdLoginFormPage from "./HcdLoginFormPage";
 import NormalOpenFilePage from "NormalOpenFilePage";
 import HcdOpenFilePage from "HcdOpenFilePage";
 import NormalOverwriteFilePage from "NormalOverwriteFilePage";
-import { Modal } from "@trueprofile.io/react-ui";
+import { Modal } from "ui-build";
 import HcdOverwriteFilePage from "HcdOverwriteFilePage";
 
 Modal.setAppElement("#root");

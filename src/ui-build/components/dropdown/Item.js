@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("react/jsx-runtime"),r=require("./Dropdown.styled.js");exports.Item=d=>e.jsx(r.DropdownItem,Object.assign({$disabled:d.disabled,"aria-disabled":d.disabled?"true":"false"},{children:d.children}),void 0);

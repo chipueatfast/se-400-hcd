@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("styled-components"),r=require("../../constants/colors.js");exports.CSSBackgroundGenerator=()=>{const n={info:r.WHITE_DARK,warning:r.YELLOW_HIGHLIGHT};return["info","warning"].map((r=>e.css(["&.TPAlert-","{background:",";}"],r,n[r])))};

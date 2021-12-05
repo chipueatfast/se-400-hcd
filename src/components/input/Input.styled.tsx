@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Typography } from '@trueprofile.io/react-ui';
+import { Typography } from 'ui-build';
 import {
   BLACK,
   GRAY,

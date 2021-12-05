@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("react/jsx-runtime"),r=require("./FormLayout.styled.js");exports.FormTitle=i=>e.jsx(r.Title,Object.assign({size:"medium",color:"green_highlight"},{children:i.children}),void 0);

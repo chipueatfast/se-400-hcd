@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});const e=(s,t)=>{for(const c of Object.keys(t))t[c]instanceof Object&&c in s&&(t[c]=Object.assign(Object.assign({},t[c]),e(s[c],t[c])));return s=Object.assign(Object.assign({},s),t)};exports.deepMerge=e;

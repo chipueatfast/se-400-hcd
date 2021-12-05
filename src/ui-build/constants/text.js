@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});exports.FONT_BIG="36px",exports.FONT_BIG_MOBILE="32px",exports.FONT_MEDIUM="21px",exports.FONT_MINI="13px",exports.FONT_STANDARD="16px",exports.LH_BIG="44px",exports.LH_BIG_MOBILE="40px",exports.LH_MEDIUM="28px",exports.LH_MINI="20px",exports.LH_STANDARD="24px";

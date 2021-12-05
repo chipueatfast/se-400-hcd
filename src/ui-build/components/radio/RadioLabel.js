@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("react/jsx-runtime"),t=require("../typography/Typography.js");exports.RadioLabel=r=>"string"!=typeof r.content?r.content:e.jsx(t.Typography.Text,Object.assign({color:"blue"},{children:r.content}),void 0);

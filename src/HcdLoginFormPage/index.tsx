@@ -17,7 +17,7 @@ import {
   OutmostContainer,
   IconButton,
 } from "@trueprofile.io/react-ui";
-import { HookFormInput } from "components/HookFormElements";
+import { HcdHookFormInput } from "components/HcdHookFormElements";
 import { useLogin } from "hooks/useLogin";
 import {
   ServerReturnErrors,
@@ -27,7 +27,7 @@ import {
 } from "types/ServerResponse.model";
 import LinkToHome from "components/LinkToHome";
 
-function NormalLoginFormPage(props: any) {
+function HcdLoginFormPage(props: any) {
   const serverJsonState: ServerJsonState = props.state
     ? { ...JSON.parse(props.state) }
     : { role: "member" };
@@ -36,9 +36,9 @@ function NormalLoginFormPage(props: any) {
   const validationSchema = yup.object().shape({
     email: yup
       .string()
-      .email("Email is not valid.")
-      .required("This field is mandatory."),
-    password: yup.string().required("This field is mandatory."),
+      .email("Your given email does not have format as a@b.c")
+      .required("This field is needed."),
+    password: yup.string().required("This field is needed."),
   });
   const resolver = yupResolver(validationSchema);
   const { ...reactHookFormProps } = useLogin({
@@ -59,7 +59,7 @@ function NormalLoginFormPage(props: any) {
   return (
     <OutmostContainer>
       <Grid className="d-flex align-items-center justify-content-center flex-column vh-100">
-        <Grid className="login-form  w-100" lg={6}>
+        <Grid className="login-form w-100" lg={6}>
           <FormProvider {...reactHookFormProps}>
             <form
               ref={loginFormRef as any}              
@@ -73,7 +73,7 @@ function NormalLoginFormPage(props: any) {
                   return;
                 }
                 reactHookFormProps.setError("email", {
-                  message: "Invalid credentials",
+                  message: "We can not find your info, please retry with a different password",
                 });
               }}
             >
@@ -103,13 +103,13 @@ function NormalLoginFormPage(props: any) {
                 )}
               </div>
               <FormLayout>
-                <HookFormInput
+                <HcdHookFormInput
                   autoComplete="email"
                   name="email"
                   required
                   label="Email"
                 />
-                <HookFormInput
+                <HcdHookFormInput
                   autoComplete="password"
                   name="password"
                   required
@@ -158,4 +158,4 @@ function NormalLoginFormPage(props: any) {
   );
 }
 
-export default NormalLoginFormPage;
+export default HcdLoginFormPage;

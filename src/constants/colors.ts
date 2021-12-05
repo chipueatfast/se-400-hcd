@@ -16,7 +16,7 @@ export const BLUE = '#00497a';
 export const BLUE_SKY = '#ecf5fd';
 export const GREEN_HIGHLIGHT = '#0b8e9b';
 export const GREEN_CONFIRM = '#009245';
-export const YELLOW_HIGHLIGHT = '#d9ec3a';
+export const YELLOW_HIGHLIGHT = '#8B8000';
 export const RED_ALERT = '#dd0c29';
 export const ORANGE = '#ee7136';
 

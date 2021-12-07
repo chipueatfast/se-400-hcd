@@ -15,6 +15,14 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Switch>
+          <Route exact path="/">
+            <div>
+              <a href="/normal/login">Normal Login Form</a>&nbsp;
+              <a href="/normal/overwrite-file">Normal overwrite file</a>&nbsp;
+              <a href="/hcd/login">HCD Login Form</a>&nbsp;
+              <a href="/hcd/overwrite-file">HCD  overwrite file</a>&nbsp;
+            </div>
+          </Route>
           <Route path="/normal/login">
             <NormalLoginFormPage />
           </Route>

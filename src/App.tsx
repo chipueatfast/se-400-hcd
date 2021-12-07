@@ -16,10 +16,28 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route exact path="/">
-            <div>
-              <a href="/normal/login">Normal Login Form</a>&nbsp;
+            <div style={{
+              paddingTop: "100px",
+              maxWidth: "800px",
+              margin: "0 auto",
+              width: "100%",
+            }}>
+              <h2>
+                Normal design examples
+              </h2>
+              <a href="/normal/login">Normal Login Form</a>
+              <br />
+              <a href="/normal/open-file">Normal Open file</a>&nbsp;
+              <br />
               <a href="/normal/overwrite-file">Normal overwrite file</a>&nbsp;
+              <br />
+              <h2>
+                HCD design examples
+              </h2>
               <a href="/hcd/login">HCD Login Form</a>&nbsp;
+              <br />
+              <a href="/hcd/open-file">HCD Open file</a>&nbsp;
+              <br />
               <a href="/hcd/overwrite-file">HCD  overwrite file</a>&nbsp;
             </div>
           </Route>

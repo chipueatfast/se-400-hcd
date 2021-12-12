@@ -28,15 +28,18 @@ function NormalOpenFilePage() {
   return (
     <OutmostContainer>
       <Grid className="d-flex align-items-center justify-content-center flex-column vh-100">
+      <Typography.Paragraph>
+          Please click to open file. The file is expected to be corrupted and cannot be opened.
+        </Typography.Paragraph>
         <FileContainer className="d-flex align-items-center flex-column" >
           <DocumentIcon
-            width={256}
-            height={256}
+            width={128}
+            height={128}
             onClick={() => {
               toast(Content);
             }}
           />
-          <span>a-corrupted-file.exe</span>
+          <Typography.Text color='blue'>a-corrupted-file.exe</Typography.Text>
         </FileContainer>
         <Toast />
       </Grid>

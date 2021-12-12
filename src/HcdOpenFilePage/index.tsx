@@ -23,22 +23,25 @@ function HcdOpenFilePage() {
       <Typography.Paragraph size="medium" color='black' style={{
         color: YELLOW_HIGHLIGHT,
       }} >
-        The file can not be processed.
+        The file might be corrupted and can not be processed.
       </Typography.Paragraph>
     </FlexContent>
   );
   return (
     <OutmostContainer>
       <Grid className="d-flex align-items-center justify-content-center flex-column vh-100">
+        <Typography.Paragraph>
+          Please click to open file. The file is expected to be corrupted and cannot be opened.
+        </Typography.Paragraph>
         <FileContainer className="d-flex align-items-center flex-column" >
           <DocumentIcon
-            width={256}
-            height={256}
+            width={128}
+            height={128}
             onClick={() => {
               toast(Content);
             }}
           />
-          <span>a-corrupted-file.exe</span>
+          <Typography.Text color='blue'>a-corrupted-file.exe</Typography.Text>
         </FileContainer>
         <Toast />
       </Grid>

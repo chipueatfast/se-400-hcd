@@ -62,6 +62,7 @@ function HcdLoginFormPage(props: any) {
         <Grid className="login-form w-100" lg={6}>
           <FormProvider {...reactHookFormProps}>
             <form
+              noValidate
               ref={loginFormRef as any}              
               onSubmit={async (e) => {
                 e.preventDefault();

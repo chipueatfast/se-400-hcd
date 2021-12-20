@@ -19,19 +19,21 @@ export const FileContainer = styled.div`
 
 function NormalOpenFilePage() {
   const Content = (
-    <FlexContent icon={<AlertCirleIcon width={32} height={32} color={RED_ALERT} />}>
+    <div>
+      <AlertCirleIcon width={32} height={32} color={RED_ALERT} />
       <Typography.Paragraph size="medium" color="red_alert">
         Can not open file
       </Typography.Paragraph>
-    </FlexContent>
+    </div>
   );
   return (
     <OutmostContainer>
       <Grid className="d-flex align-items-center justify-content-center flex-column vh-100">
-      <Typography.Paragraph>
-          Please click to open file. The file is expected to be corrupted and cannot be opened.
+        <Typography.Paragraph>
+          Please click to open file. The file is expected to be corrupted and
+          cannot be opened.
         </Typography.Paragraph>
-        <FileContainer className="d-flex align-items-center flex-column" >
+        <FileContainer className="d-flex align-items-center flex-column">
           <DocumentIcon
             width={128}
             height={128}
@@ -39,7 +41,7 @@ function NormalOpenFilePage() {
               toast(Content);
             }}
           />
-          <Typography.Text color='blue'>a-corrupted-file.exe</Typography.Text>
+          <Typography.Text color="blue">a-corrupted-file.exe</Typography.Text>
         </FileContainer>
         <Toast />
       </Grid>

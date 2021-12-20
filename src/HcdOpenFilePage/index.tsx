@@ -11,6 +11,7 @@ import {
 } from "ui-build";
 import { BLACK, YELLOW_HIGHLIGHT } from "constants/colors";
 
+
 export const FileContainer = styled.div`
   &:hover {
     cursor: pointer;
@@ -19,13 +20,14 @@ export const FileContainer = styled.div`
 
 function HcdOpenFilePage() {
   const Content = (
-    <FlexContent icon={<AlertCirleIcon width={32} height={32} color={YELLOW_HIGHLIGHT} />}>
+    <div>
+      <AlertCirleIcon width={32} height={32} color={YELLOW_HIGHLIGHT} />
       <Typography.Paragraph size="medium" color='black' style={{
         color: YELLOW_HIGHLIGHT,
       }} >
         The file might be corrupted and can not be processed.
       </Typography.Paragraph>
-    </FlexContent>
+    </div>
   );
   return (
     <OutmostContainer>
